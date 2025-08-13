@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #6f4e37;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .video-section {
+            text-align: center;
+            padding: 20px;
+        }
+        video {
+            width: 80%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Coffee Brewing & Gallery</h1>
+</header>
+
+<section class="gallery">
+    <img src="coffee1.jpg" alt="Espresso" loading="lazy">
+    <img src="coffee2.jpg" alt="Cappuccino" loading="lazy">
+    <img src="coffee3.jpg" alt="Latte" loading="lazy">
+</section>
+
+<section class="video-section">
+    <h2>How Coffee is Brewed</h2>
+    <video controls loading="lazy" poster="coffee-video-thumbnail.jpg">
+        <source src="coffee-brewing.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+</body>
+</html>
